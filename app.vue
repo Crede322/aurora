@@ -7,8 +7,8 @@
 </template>
 <script setup></script>
 <style scoped>
-body {
-  font-family: 'Source Sans 3', sans-serif;
+* {
+  font-family: 'Arial', sans-serif;
   transition: opacity 1s ease; /* Плавный переход */
 }
 
@@ -18,5 +18,9 @@ body.loaded {
 
 body {
   opacity: 0; /* Изначально скрываем текст, пока шрифт не загрузится */
+}
+
+.main__styles {
+  overflow-x: hidden;
 }
 </style>

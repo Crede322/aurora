@@ -1,0 +1,11 @@
+:root {
+    --color-main: #1c7b98;
+    --color-accent: #f16378;
+    --color-darkcyan: #145265;
+    --color-textgray: #8A8B8B;
+    --color-lightblue: #ebfbff;
+  }
+
+button {
+    cursor: pointer;
+}

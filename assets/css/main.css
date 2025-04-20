@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.tw-heading {
+    @apply text-[36px] text-[var(--color-main)] font-bold
+}
+
+.tw-text-thin {
+    @apply text-[16px] text-[var(--color-main)]
+}
+
+.tw-text-thin-gray {
+    @apply text-[16px] text-[var(--color-textgray)]
+}
+
+.tw-container {
+    @apply max-w-[1340px] mx-auto pt-20
+}

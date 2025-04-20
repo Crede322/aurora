@@ -1,30 +1,20 @@
 <template>
   <div class="wrapper__main relative">
     <Header></Header>
-    <main class="container mx-auto">
+    <Nav></Nav>
+    <main class="mx-auto">
       <slot />
     </main>
+    <UiFooter />
   </div>
 </template>
 <script setup lang="ts">
-import Header from '~/assets/components/ui/header/Header.vue';
+import Header from '~/components/ui/header/Header.vue';
+import Nav from '~/components/ui/nav/Nav.vue';
 </script>
 <style scoped>
 .wrapper__main {
-  /* background: rgb(119, 243, 215);
-  background: linear-gradient(
-    35deg,
-    rgba(119, 243, 215, 1) 0%,
-    rgba(35, 164, 176, 1) 73%,
-    rgba(35, 164, 176, 1) 99%
-  ); */
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    185deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(43, 204, 221, 1) 26%,
-    rgba(37, 172, 184, 1) 74%,
-    rgba(35, 164, 176, 1) 100%
-  );
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(185deg, rgba(255, 255, 255, 1) 0%, rgba(0, 234, 255, 0.7) 100%); */
 }
 </style>
