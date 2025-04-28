@@ -17,8 +17,17 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Source+Sans+3,wght@0,200..900;1,200..900&display=swap',
         },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ],
+      title: 'стоматологія Aurora',
+      meta: [
+        { name: 'description', content: 'Стоматологічна клініка Aurora' },
+        {
+          name: 'keywords',
+          content:
+            'Стоматологія, Стоматологічна клініка,Стоматологічна клініка Aurora,зубна клініка Aurora, Зубна клініка Київ, Aurora Київ',
+        },
       ],
     },
-    // baseURL: '/aurora/',
   },
 });
