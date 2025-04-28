@@ -2,10 +2,25 @@
     --color-main: #1c7b98;
     --color-accent: #f16378;
     --color-darkcyan: #145265;
+    --color-darkblue:#18414e;
     --color-textgray: #8A8B8B;
     --color-lightblue: #ebfbff;
+    --color-highlight:#cae6ee;
+    @apply scroll-smooth
   }
 
 button {
     cursor: pointer;
+}
+
+input:focus {
+  outline-color: var(--color-main);
+}
+
+textarea:focus {
+  outline-color: var(--color-main);
+}
+
+.flatpickr-calendar {
+  border: 2px solid var(--color-main) !important;
 }

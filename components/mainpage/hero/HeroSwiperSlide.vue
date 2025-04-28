@@ -1,17 +1,16 @@
 <template>
-  <div class="relative flex items-center h-full">
+  <div class="hero relative flex items-center h-full 3xl:bg-red-500 w-[98%]">
     <div>
-      <h2 class="tw-heading">{{ textMain }}</h2>
-      <h3 class="tw-text-thin">{{ textSecondary }}</h3>
+      <slot></slot>
       <img
         v-if="imgMain === 'footage1'"
-        class="absolute w-[49%] h-[90%] top-[8%] right-[-45px] rounded-[10px]"
+        class="absolute w-[49%] h-[90%] top-[8%] right-[0] rounded-[10px] z-2"
         src="/img/footage1.webp"
         alt="footage1"
       />
       <img
         v-else
-        class="absolute w-[49%] h-[90%] top-[8%] right-[-45px] rounded-[10px]"
+        class="absolute w-[49%] h-[90%] top-[8%] right-[0] rounded-[10px] z-2"
         src="/img/footage2.webp"
         alt="footage1"
       />
@@ -34,3 +33,10 @@ const props = defineProps({
   },
 });
 </script>
+<style scoped>
+@media (max-width: 1200px) {
+  .hero img {
+    opacity: 0;
+  }
+}
+</style>

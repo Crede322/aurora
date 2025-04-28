@@ -11,18 +11,23 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.11.0",
     "@tailwindcss/vite": "^4.1.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "flatpickr": "^4.6.13",
     "nuxt": "^3.16.2",
+    "pinia": "^3.0.2",
     "swiper": "^11.2.6",
     "tailwind-merge": "^3.2.0",
     "tw-animate-css": "^1.2.5",
     "vue": "^3.5.13",
+    "vue-flatpickr-component": "^12.0.0",
     "vue-router": "^4.5.0",
     "vue3-compare-image": "^1.2.5"
   },
   "devDependencies": {
+    "@types/node": "^22.15.2",
     "autoprefixer": "^10.4.21",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",

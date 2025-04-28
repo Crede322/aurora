@@ -1,7 +1,7 @@
 <template>
-  <div class="tw-container">
-    <h2 class="tw-heading mx-auto w-fit mb-[70px]">Отзывы наших клиентов</h2>
-    <swiper :loop="true" :modules="modules">
+  <div id="reviews" class="tw-container">
+    <h2 class="tw-heading mx-auto w-fit mb-[40px] md:mb-[80px]">Відгуки наших клієнтів</h2>
+    <swiper :loop="true">
       <swiper-slide>
         <Slide
           reviewer-name="Ирина"

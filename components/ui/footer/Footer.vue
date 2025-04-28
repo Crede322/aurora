@@ -1,26 +1,10 @@
 <template>
-  <footer class="footer bg-[var(--color-lightblue)] py-[56px]">
-    <div class="max-w-[1340px] mx-auto flex justify-between">
-      <UiLogo />
-      <ul>
-        <li><NuxtLink to="/">Установка брекетов</NuxtLink></li>
-        <li><NuxtLink to="/">Установка брекетов</NuxtLink></li>
-        <li><NuxtLink to="/">Установка брекетов</NuxtLink></li>
-      </ul>
-      <ul>
-        <li><NuxtLink to="/">Акции</NuxtLink></li>
-        <li><NuxtLink to="/">Акции</NuxtLink></li>
-        <li><NuxtLink to="/">Акции</NuxtLink></li>
-      </ul>
-      <ul>
-        <li><NuxtLink to="/">Контакты</NuxtLink></li>
-        <li><NuxtLink to="/">Контакты</NuxtLink></li>
-        <li><NuxtLink to="/">Контакты</NuxtLink></li>
-      </ul>
-      <ul>
-        <li><NuxtLink to="/">Карта сайта</NuxtLink></li>
-      </ul>
-      <div></div>
+  <footer id="footer" class="footer bg-[var(--color-darkblue)] py-[56px] px-[3%]">
+    <div
+      class="max-w-[1340px] mx-auto flex flex-col sm:flex-row justify-between gap-[40px] sm:gap-0"
+    >
+      <UiLogo white="true" />
+      <SharedContacts />
     </div>
   </footer>
 </template>

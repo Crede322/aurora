@@ -1,7 +1,9 @@
 <template>
   <div class="tw-container">
-    <h2 class="tw-heading mx-auto w-fit mb-[120px]">Почему выбирают нас</h2>
-    <div class="grid grid-cols-3 grid-rows-2 max-w-[1340px] mx-auto gap-x-[30px] gap-y-[40px]">
+    <h2 class="tw-heading mx-auto w-fit mb-[40px] md:mb-[80px]">Чому вибирають нас</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[1340px] mx-auto gap-x-[30px] gap-y-[40px]"
+    >
       <WhyUsCard
         text-main="більше 20 років досвіду"
         text-secondary="Працюємо у сфері стоматологічних послуг із 2005 року."

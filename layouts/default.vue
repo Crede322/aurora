@@ -5,6 +5,7 @@
     <main class="mx-auto">
       <slot />
     </main>
+    <UiScrollButton />
     <UiFooter />
   </div>
 </template>

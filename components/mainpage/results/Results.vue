@@ -1,7 +1,9 @@
 <template>
   <div class="tw-container">
-    <h2 class="tw-heading mx-auto w-fit mb-[120px]">Результаты лечения в нашей клинике</h2>
-    <div class="grid grid-cols-3 gap-[55px]">
+    <h2 class="tw-heading mx-auto w-fit mb-[40px] md:mb-[80px]">
+      Результати лікування у нашій клініці
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[55px]">
       <MainpageResultsComparison
         text-main="Чищення зубів"
         left-image="/img/mainpageComparisons/comparison1left.jpg"

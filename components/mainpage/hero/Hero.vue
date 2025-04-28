@@ -2,18 +2,26 @@
   <div class="wrapper__hero relative mx-auto h-[78vh] max-h-[600px]">
     <div class="swiper flex flex-col max-w-[1340px] mx-auto h-full">
       <transition name="fade" mode="out-in">
-        <HeroSwiperSlide
-          v-if="!toggleSlide"
-          text-main='Стоматологическая клиника "Aurora"'
-          text-secondary="Получите консультацию"
-          img-main="footage1"
-        />
-        <HeroSwiperSlide
-          v-else
-          text-main="Второй слайд"
-          text-secondary="Получите консультацию второй слайд"
-          img-main="footage2"
-        />
+        <HeroSwiperSlide v-if="!toggleSlide" img-main="footage1">
+          <h1 class="text-[clamp(24px,6vw,36px)] text-[var(--color-main)] font-bold relative z-3">
+            Стоматологічна клініка "Aurora"
+          </h1>
+          <h3 class="tw-text-thin z-3 relative max-w-[480px]">
+            Отримайте консультацію прямо зараз:
+            <span class="text-[var(--color-accent)] text-nowrap">+ 38 (066) 517-1324</span>
+            чи замовте дзвінок і ми зв'яжемося з вами найближчим часом
+          </h3>
+        </HeroSwiperSlide>
+        <HeroSwiperSlide v-else img-main="footage2">
+          <h1 class="text-[clamp(24px,6vw,36px)] text-[var(--color-main)] font-bold relative z-3">
+            Стоматологічна клініка "Aurora"
+          </h1>
+          <h3 class="tw-text-thin z-3 relative max-w-[480px]">
+            Отримайте консультацію прямо зараз:
+            <span class="text-[var(--color-accent)]">+ 38 (066) 517-1324</span> чи замовте дзвінок і
+            ми зв'яжемося з вами найближчим часом
+          </h3>
+        </HeroSwiperSlide>
       </transition>
       <!-- пагинация -->
       <div class="pagination flex gap-[8px] mx-auto pb-[20px] w-fit">
@@ -68,9 +76,9 @@ onMounted(() => {
   opacity: 0;
 }
 
-.pagination__indicator {
-}
-
-.pagination__indicator_inactive {
+@media (max-width: 1400px) {
+  .wrapper__hero {
+    max-width: 96vw;
+  }
 }
 </style>
